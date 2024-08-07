@@ -27,7 +27,7 @@ body {
 /* Inicio área header */
 header {
     height: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: var(--cor-branca);
 }
 
@@ -78,8 +78,11 @@ header {
 }
 
 .menu li a:hover {
-    color: rgb(232, 232, 148);
+    color: rgb(191, 191, 189);
+   
 }
+
+
 
 /* Fim da área header */
 
@@ -104,13 +107,55 @@ header {
     background-color: rgb(0, 0, 0, 0.8);
 }
 .banner .slidearea{
-    padding-left: 10%;
+    padding-left: 5%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    align-items: center;
+   align-items: center;
     color: white;
+
+}
+.slideTitle{
+    display: flex;
+    gap:50px;
 }
 
 .banner h1{
     font-size: 80px;
+}
+
+.banner .slidearea .slideImgs img{
+    height: 200px;
+    display: inline-block;
+
+}
+
+.banner .slidearea .slideSm{
+    margin-top: 70px;
+}
+.banner .slidearea .slideSm img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
 }
