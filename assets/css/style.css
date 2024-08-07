@@ -109,7 +109,7 @@ header {
     width: 100vw;
     height: 100%;
     display: inline-block;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 .banner .slidearea {
@@ -123,11 +123,13 @@ header {
 
 }
 
+/* Área do titulo e das imagens das marcas */
 .slideTitle {
     display: flex;
     gap: 50px;
 }
 
+/* Titulo principal */
 .banner h1 {
     color: rgb(247, 247, 240);
     font-size: 70px;
@@ -141,6 +143,8 @@ header {
     font-weight: 200;
 }
 
+
+/* Área dos icones de serviço  */
 
 .banner .slidearea .slideService {
     min-width: 1140px;
@@ -160,6 +164,7 @@ header {
     gap: 7px;
 }
 
+/* Icones de serviço */
 .banner .slidearea .slideImgs img {
     height: 150px;
 
@@ -170,6 +175,77 @@ header {
     cursor: pointer;
 }
 
+.section-servicos {
+    width: 100%;
+}
+
+.servicos{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.servIcons {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servIcon {
+    text-align: center;
+    width: 350px;
+    height: 250px;
+}
+.servIcon img{
+    width: 150px;  
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.servIcon h4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.servContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    height: 250px;
+    background-color: #888;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* botao whatzap */
 .btn-whatsapp {
     position: fixed;
     width: 60px;
