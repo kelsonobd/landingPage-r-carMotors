@@ -122,13 +122,12 @@ header {
 }
 
 .banner h1{
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .banner .slidearea .slideImgs img{
-    height: 200px;
-    display: inline-block;
-
+    height: 150px;
+    
 }
 
 .banner .slidearea .slideSm{
