@@ -178,6 +178,24 @@ header {
 .section-servicos {
     width: 100%;
 }
+.section-servicos .title{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-servicos .title h2{
+    font-size: 70px;
+}
+
+.section-servicos .title p{
+    font-size: 30px;
+}
+
 
 .servicos{
     padding-left: 5%;
@@ -196,7 +214,7 @@ header {
     height: 250px;
 }
 .servIcon img{
-    width: 150px;  
+    width: 120px;  
     box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
     border-radius: 50%;
 }
