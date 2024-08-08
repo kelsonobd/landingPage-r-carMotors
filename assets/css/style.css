@@ -175,6 +175,62 @@ header {
     cursor: pointer;
 }
 
+/* Área quem somos */
+
+.section-sobre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    
+}
+
+.section-sobre h2{
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 3px solid #980100
+}
+
+
+.sobreSpan{
+    font-weight: 600;
+ 
+}
+.sobreNos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobreText{
+    margin-right: 70px;
+    width: 500px;
+    text-align:justify;
+    
+}
+.sobreText p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.sobreImg{
+    width: 700px;
+    height: 500px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
 
 /* Inicio área de serviços */
 .section-servicos {
