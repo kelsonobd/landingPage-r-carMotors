@@ -416,22 +416,14 @@ header {
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rodape{
+    background-color: #333;
+    font-size: 13px;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
 
 
 
@@ -457,3 +449,5 @@ header {
 .fa-whatsapp {
     margin-top: 16px;
 }
+
+
