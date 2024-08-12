@@ -142,6 +142,11 @@ header {
     font-weight: 200;
 }
 
+.banner .slidearea .slideImgs img {
+    height: 150px;
+
+}
+
 
 /* Área dos icones de serviço  */
 
@@ -149,7 +154,7 @@ header {
     min-width: 1140px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 70px;
     top: 150px;
     position: relative;
@@ -164,15 +169,13 @@ header {
 }
 
 /* Icones de serviço */
-.banner .slidearea .slideImgs img {
-    height: 150px;
 
-}
 
-.banner .slidearea .slideService img {
-    width: 100px;
+.banner .slidearea .slideService .slideIcon img {
+    width: 70px;
     cursor: pointer;
 }
+
 
 /* Área quem somos */
 
@@ -354,7 +357,7 @@ header {
 
 }
 
-.section-contato .contato h2{
+.section-contato .contato h2 {
     text-align: center;
     font-size: 50px;
     text-transform: uppercase;
@@ -368,20 +371,22 @@ header {
 }
 
 .section-contato .contato .redeSociais .redeSocial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin-left: 20px;
     width: 230px;
     height: 150px;
 }
-.section-contato .contato .redeSociais .redeSocial img{
+
+.section-contato .contato .redeSociais .redeSocial img {
     width: 70px;
     cursor: pointer;
 }
-.section-contato .contato .redeSociais .redeSocial p{
+
+.section-contato .contato .redeSociais .redeSocial p {
     font-size: 20px;
 }
 
@@ -393,30 +398,31 @@ header {
 
 .section-contato .contato .horariosMapa .horarios {
     margin-right: 50px;
-    width:300px;
+    width: 300px;
     height: 450px;
     padding-top: 60px;
-    
+
 }
 
-.section-contato .contato .horariosMapa .horarios h3{
+.section-contato .contato .horariosMapa .horarios h3 {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    
+
 
 }
-.section-contato .contato .horariosMapa .horarios .horario{
+
+.section-contato .contato .horariosMapa .horarios .horario {
     margin-top: 20px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     line-height: 40px;
     font-size: 25px;
     font-weight: 400;
 }
 
-.rodape{
+.rodape {
     background-color: #333;
     font-size: 13px;
     color: #fff;
@@ -451,3 +457,47 @@ header {
 }
 
 
+
+
+/* Responsividade  Celular */
+
+@media (max-width:450px) {
+    nav {
+        display: none;
+    }
+
+    .slideTitle {
+        flex-direction: column;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner h1 span {
+        font-size: 20px;
+    }
+
+    .slideImgs {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slideImgs img {
+        height: 50px;
+        width: 120px;
+    }
+
+    .banner .slidearea .slideService .slideIcon img {
+    width: 40px;
+    }
+
+    .banner .slidearea .slideService {
+       
+        gap: 7px;
+       top:60px;
+        
+    }
+
+
+}
