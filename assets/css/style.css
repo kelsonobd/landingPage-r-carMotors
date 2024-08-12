@@ -176,7 +176,7 @@ header {
 
 /* Área quem somos */
 
-.section-sobre{
+.section-sobre {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -185,45 +185,46 @@ header {
     gap: 70px;
     padding-top: 8%;
     padding-bottom: 8%;
-    
+
 }
 
-.section-sobre .sobreTitle{
+.section-sobre .sobreTitle {
     text-align: center;
-  
+
 }
-.section-sobre .sobreTitle h2{
+
+.section-sobre .sobreTitle h2 {
     font-size: 45px;
     font-weight: 300;
     text-transform: uppercase;
-  
+
 }
 
-.section-sobre .sobreTitle p{
+.section-sobre .sobreTitle p {
     font-size: 30px;
     font-weight: 200px;
     text-transform: uppercase;
-    color:rgb(213, 188, 0)
-
+    color: rgb(213, 188, 0)
 }
 
-.sobreNos{
+.sobreNos {
     display: flex;
     justify-content: space-around;
 }
 
-.sobreText{
+.sobreText {
     margin-right: 70px;
     width: 500px;
-    text-align:justify;
-    
+    text-align: justify;
+
 }
-.sobreText p{
+
+.sobreText p {
     font-size: 20px;
     line-height: 30px;
 }
 
-.sobreImg{
+.sobreImg {
     width: 700px;
     height: 500px;
     border-radius: 7px;
@@ -336,8 +337,84 @@ header {
 }
 
 
+/* Área contato */
 
+.section-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ede9e9;
+}
 
+.section-contato .contato {
+    max-width: 1140px;
+    padding: 5%;
+
+}
+
+.section-contato .contato h2{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.section-contato .contato .redeSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-contato .contato .redeSociais .redeSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+    margin-left: 20px;
+    width: 230px;
+    height: 150px;
+}
+.section-contato .contato .redeSociais .redeSocial img{
+    width: 70px;
+    cursor: pointer;
+}
+.section-contato .contato .redeSociais .redeSocial p{
+    font-size: 20px;
+}
+
+.section-contato .contato .horariosMapa {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.section-contato .contato .horariosMapa .horarios {
+    margin-right: 50px;
+    width:300px;
+    height: 450px;
+    padding-top: 60px;
+    
+}
+
+.section-contato .contato .horariosMapa .horarios h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+}
+.section-contato .contato .horariosMapa .horarios .horario{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 400;
+}
 
 
 
