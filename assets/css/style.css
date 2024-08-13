@@ -482,148 +482,173 @@ header {
     }
 
     .header .logo .foneHeader {
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .menu-opener{
+        width: 30px;
+        margin-right: 30px;
     }
 
     nav {
         display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
     }
-
-    .slideTitle {
+    .menu ul{
         flex-direction: column;
     }
-
-    .banner h1 {
-        font-size: 40px;
-        line-height: 35px;
-    }
-
-    .banner h1 span {
-        font-size: 25px;
-    }
-
-    .slideImgs {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .slideImgs img {
-        height: 50px;
-        width: 120px;
-    }
-
-    .banner .slidearea .slideService .slideIcon img {
-        width: 40px;
-    }
-
-    .banner .slidearea .slideService {
-
-        gap: 7px;
-        top: 60px;
-
-    }
-
-    /* section sobre */
-    .section-sobre .sobreNos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-sobre .sobreTitle h2 {
-        font-size: 40px;
-        font-weight: 400;
-    }
-
-    .section-sobre .sobreNos {
-        margin-top: -65px;
-    }
-
-    .section-sobre .sobreNos .sobreText {
-        margin: 0;
-        padding: 5%;
-        width: 100%;
-    }
-
-    .section-sobre .sobreNos .sobreText p {
-        font-size: 15px;
-    }
-
-    .section-sobre .sobreNos .sobreImg {
-        width: 350px;
-        height: 350px;
-    }
-
-    /* Section Serviços */
-    .section-servicos .title h2 {
-        font-size: 40px;
-    }
-
-    .section-servicos .title p {
+    .menu li a {
+        height: 80px;
+        line-height: 70px;
         font-size: 23px;
+        margin-left: 20px;
     }
 
-    .section-servicos .servicos .servIcon {
-        width: 175px;
+    
+
+
+        .slideTitle {
+            flex-direction: column;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            line-height: 35px;
+        }
+
+        .banner h1 span {
+            font-size: 25px;
+        }
+
+        .slideImgs {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slideImgs img {
+            height: 50px;
+            width: 120px;
+        }
+
+        .banner .slidearea .slideService .slideIcon img {
+            width: 40px;
+        }
+
+        .banner .slidearea .slideService {
+
+            gap: 7px;
+            top: 60px;
+
+        }
+
+        /* section sobre */
+        .section-sobre .sobreNos {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-sobre .sobreTitle h2 {
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .section-sobre .sobreNos {
+            margin-top: -65px;
+        }
+
+        .section-sobre .sobreNos .sobreText {
+            margin: 0;
+            padding: 5%;
+            width: 100%;
+        }
+
+        .section-sobre .sobreNos .sobreText p {
+            font-size: 15px;
+        }
+
+        .section-sobre .sobreNos .sobreImg {
+            width: 350px;
+            height: 350px;
+        }
+
+        /* Section Serviços */
+        .section-servicos .title h2 {
+            font-size: 40px;
+        }
+
+        .section-servicos .title p {
+            font-size: 23px;
+        }
+
+        .section-servicos .servicos .servIcon {
+            width: 175px;
+        }
+
+        .section-servicos .servContato p {
+            font-size: 16px;
+        }
+
+        .section-servicos .servContato h4 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* section contato */
+        .section-contato .contato h2 {
+            font-size: 40px;
+        }
+
+        .section-contato .contato .redeSociais .redeSocial {
+            width: 70px;
+        }
+
+        .section-contato .contato .redeSociais .redeSocial img {
+            width: 40px;
+            ;
+        }
+
+        .section-contato .contato .redeSociais .redeSocial p {
+            font-size: 17px;
+        }
+
+        .section-contato .contato .horariosMapa {
+            flex-direction: column;
+            margin-top: 0px;
+
+        }
+
+        .section-contato .contato .horariosMapa .horarios {
+            margin-right: 0;
+
+        }
+
+        .mapa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+
+        }
+
+        .section-contato .foneEndereco {
+            margin-top: 10px;
+        }
+
+        .section-contato .foneEndereco p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+        /* botao whatsapp flut */
+        .btn-whatsapp {
+            display: none;
+        }
     }
-
-    .section-servicos .servContato p {
-        font-size: 16px;
-    }
-
-    .section-servicos .servContato h4 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    /* section contato */
-    .section-contato .contato h2 {
-        font-size: 40px;
-    }
-
-    .section-contato .contato .redeSociais .redeSocial {
-        width: 70px;
-    }
-
-    .section-contato .contato .redeSociais .redeSocial img {
-        width: 40px;
-        ;
-    }
-
-    .section-contato .contato .redeSociais .redeSocial p {
-        font-size: 17px;
-    }
-
-    .section-contato .contato .horariosMapa {
-        flex-direction: column;
-        margin-top: 0px;
-
-    }
-
-    .section-contato .contato .horariosMapa .horarios {
-        margin-right: 0;
-
-    }
-
-    .mapa {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 320px;
-
-    }
-
-    .section-contato .foneEndereco {
-        margin-top: 10px;
-    }
-    .section-contato .foneEndereco p{
-        font-size: 20px;
-        text-align: center;
-    }
-
-
-
-    /* botao whatsapp flut */
-    .btn-whatsapp {
-        display: none;
-    }
-}
