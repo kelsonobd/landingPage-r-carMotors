@@ -498,6 +498,33 @@ header {
        top:60px;
         
     }
+/* section sobre */
+    .section-sobre .sobreNos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-sobre .sobreTitle h2{
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .section-sobre .sobreNos {
+        margin-top: -65px;
+    }
+    .section-sobre .sobreNos .sobreText{
+        margin: 0;
+        padding: 5%;
+        width: 100%;  
+    }
+    .section-sobre .sobreNos .sobreText p{
+        font-size: 15px; 
+    }
+    .section-sobre  .sobreNos .sobreImg {
+        width: 350px;
+        height: 350px;
+    }
+    
 
 
 }
