@@ -46,7 +46,7 @@ header {
 .logo {
     width: 300px;
     display: flex;
-
+    color: white;
     align-items: center;
     gap: 20px;
 
@@ -58,7 +58,7 @@ header {
 }
 
 .logo .foneHeader {
-    color: white;
+    color: inherit;
     font-size: 18px;
     text-decoration: none;
 }
