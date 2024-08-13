@@ -57,9 +57,10 @@ header {
     height: 100px;
 }
 
-.foneHeader {
+.logo .foneHeader {
     color: white;
     font-size: 18px;
+    text-decoration: none;
 }
 
 /* Área do Menu de navegação */
