@@ -46,7 +46,7 @@ header {
 .logo {
     width: 300px;
     display: flex;
-   
+
     align-items: center;
     gap: 20px;
 
@@ -57,7 +57,7 @@ header {
     height: 100px;
 }
 
-.foneHeader{
+.foneHeader {
     color: white;
     font-size: 18px;
 }
@@ -136,7 +136,7 @@ header {
 
 /* Titulo principal */
 .banner h1 {
-    color: rgb(247, 247, 240);
+    color: rgb(255, 255, 255);
     font-size: 70px;
     font-weight: 400;
     line-height: 50px;
@@ -146,6 +146,7 @@ header {
 .banner h1 span {
     font-size: 50px;
     font-weight: 200;
+    color: #d4ea0e;
 }
 
 /* Área dos icones de serviço  */
@@ -172,7 +173,7 @@ header {
 
 
 .banner .slidearea .slideMs .slideIcon img {
-    width: 70px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -411,12 +412,13 @@ header {
 
 
 }
-.foneEndereco{
+
+.foneEndereco {
     margin-top: -35px;
     margin-bottom: 30px;
 }
 
-.section-contato .foneEndereco p{
+.section-contato .foneEndereco p {
     font-size: 25px;
 }
 
@@ -440,8 +442,6 @@ header {
     text-align: center;
     padding-top: 30px;
 }
-
-
 
 
 
@@ -472,6 +472,19 @@ header {
 /* Responsividade  Celular */
 
 @media (max-width:450px) {
+
+    .header {
+        height: 120px;
+    }
+
+    .header .logo img {
+        width: 150px;
+    }
+
+    .header .logo .foneHeader {
+        font-size: 15px;
+    }
+
     nav {
         display: none;
     }
@@ -482,10 +495,11 @@ header {
 
     .banner h1 {
         font-size: 40px;
+        line-height: 35px;
     }
 
     .banner h1 span {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .slideImgs {
@@ -499,22 +513,23 @@ header {
     }
 
     .banner .slidearea .slideService .slideIcon img {
-    width: 40px;
+        width: 40px;
     }
 
     .banner .slidearea .slideService {
-       
+
         gap: 7px;
-       top:60px;
-        
+        top: 60px;
+
     }
-/* section sobre */
-    .section-sobre .sobreNos{
+
+    /* section sobre */
+    .section-sobre .sobreNos {
         flex-direction: column;
         align-items: center;
     }
 
-    .section-sobre .sobreTitle h2{
+    .section-sobre .sobreTitle h2 {
         font-size: 40px;
         font-weight: 400;
     }
@@ -522,66 +537,93 @@ header {
     .section-sobre .sobreNos {
         margin-top: -65px;
     }
-    .section-sobre .sobreNos .sobreText{
+
+    .section-sobre .sobreNos .sobreText {
         margin: 0;
         padding: 5%;
-        width: 100%;  
+        width: 100%;
     }
-    .section-sobre .sobreNos .sobreText p{
-        font-size: 15px; 
+
+    .section-sobre .sobreNos .sobreText p {
+        font-size: 15px;
     }
-    .section-sobre  .sobreNos .sobreImg {
+
+    .section-sobre .sobreNos .sobreImg {
         width: 350px;
         height: 350px;
     }
-    
+
     /* Section Serviços */
-.section-servicos .title h2{
-    font-size: 40px;
-}
-.section-servicos .title p{
-    font-size: 23px;
-}
+    .section-servicos .title h2 {
+        font-size: 40px;
+    }
 
-.section-servicos .servicos .servIcon {
-    width: 175px;
-}
+    .section-servicos .title p {
+        font-size: 23px;
+    }
 
-.section-servicos .servContato p{
-    font-size: 16px;
-}
-.section-servicos .servContato h4{
-    font-size: 20px;
-    text-align: center;
-}
-/* section contato */
-.section-contato .contato h2 {
-    font-size: 40px;
-}
+    .section-servicos .servicos .servIcon {
+        width: 175px;
+    }
 
-.section-contato .contato .redeSociais .redeSocial{
-    width: 70px;  
-}
-.section-contato .contato .redeSociais .redeSocial img{
-    width: 40px;;
-}
-.section-contato .contato .redeSociais .redeSocial p {
-    font-size: 17px;
-}
-.section-contato .contato .horariosMapa{
-    flex-direction: column;
-    margin-top: -20px;
-    gap: 50px;
-}
-.section-contato .contato .horariosMapa .horarios {
-    margin-right: 0;
-    
-}
-.mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    
-}
+    .section-servicos .servContato p {
+        font-size: 16px;
+    }
+
+    .section-servicos .servContato h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* section contato */
+    .section-contato .contato h2 {
+        font-size: 40px;
+    }
+
+    .section-contato .contato .redeSociais .redeSocial {
+        width: 70px;
+    }
+
+    .section-contato .contato .redeSociais .redeSocial img {
+        width: 40px;
+        ;
+    }
+
+    .section-contato .contato .redeSociais .redeSocial p {
+        font-size: 17px;
+    }
+
+    .section-contato .contato .horariosMapa {
+        flex-direction: column;
+        margin-top: 0px;
+
+    }
+
+    .section-contato .contato .horariosMapa .horarios {
+        margin-right: 0;
+
+    }
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+
+    }
+
+    .section-contato .foneEndereco {
+        margin-top: 10px;
+    }
+    .section-contato .foneEndereco p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+    /* botao whatsapp flut */
+    .btn-whatsapp {
+        display: none;
+    }
 }
