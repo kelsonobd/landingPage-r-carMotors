@@ -561,11 +561,14 @@ header {
 .section-contato .contato .horariosMapa{
     flex-direction: column;
     margin-top: -20px;
+    gap: 50px;
 }
 .section-contato .contato .horariosMapa .horarios {
     margin-right: 0;
+    
 }
 .mapa{
+    
     display: flex;
     justify-content: center;
     align-items: center;
