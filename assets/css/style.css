@@ -569,7 +569,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor-vermelha);
     width: 320px;
     
 }
