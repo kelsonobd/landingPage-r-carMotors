@@ -416,17 +416,6 @@ header {
 
 }
 
-.foneEndereco {
-    margin-top: -35px;
-    margin-bottom: 30px;
-}
-
-.section-contato .foneEndereco p {
-    font-size: 25px;
-}
-
-
-
 .section-contato .contato .horariosMapa .horarios .horario {
     margin-top: 20px;
     display: flex;
@@ -437,13 +426,28 @@ header {
     font-weight: 400;
 }
 
+.foneEndereco {
+    margin-top: -35px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+}
+.section-contato .foneEndereco p {
+    font-size: 15px;
+}
+
 .rodape {
     background-color: #333;
     font-size: 13px;
     color: #fff;
     height: 100px;
-    text-align: center;
-    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 7px;
+    
 }
 
 
@@ -653,11 +657,11 @@ header {
     }
 
     .section-contato .foneEndereco {
-        margin-top: 10px;
+        padding: 20px;
     }
 
     .section-contato .foneEndereco p {
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
     }
 
