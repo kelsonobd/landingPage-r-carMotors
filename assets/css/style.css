@@ -525,6 +525,25 @@ header {
         height: 350px;
     }
     
+    /* Section Serviços */
+.section-servicos .title h2{
+    font-size: 40px;
+}
+.section-servicos .title p{
+    font-size: 23px;
+}
+
+.section-servicos .servicos .servIcon {
+    width: 175px;
+}
+
+.section-servicos .servContato p{
+    font-size: 16px;
+}
+.section-servicos .servContato h4{
+    font-size: 20px;
+    text-align: center;
+}
 
 
 }
