@@ -544,6 +544,37 @@ header {
     font-size: 20px;
     text-align: center;
 }
+/* section contato */
+.section-contato .contato h2 {
+    font-size: 40px;
+}
 
+.section-contato .contato .redeSociais{
+   
+}
+
+.section-contato .contato .redeSociais .redeSocial{
+    width: 70px;  
+}
+.section-contato .contato .redeSociais .redeSocial img{
+    width: 40px;;
+}
+.section-contato .contato .redeSociais .redeSocial p {
+    font-size: 17px;
+}
+.section-contato .contato .horariosMapa{
+    flex-direction: column;
+    margin-top: -20px;
+}
+.section-contato .contato .horariosMapa .horarios {
+    margin-right: 0;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-vermelha);
+    width: 80%;
+}
 
 }
