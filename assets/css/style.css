@@ -44,13 +44,22 @@ header {
 
 /* Área do logo */
 .logo {
-    width: 100px;
+    width: 300px;
+    display: flex;
+   
+    align-items: center;
+    gap: 20px;
 
 }
 
 .logo img {
-    width: 200px;
+    width: 150px;
     height: 100px;
+}
+
+.foneHeader{
+    color: white;
+    font-size: 18px;
 }
 
 /* Área do Menu de navegação */
@@ -109,7 +118,7 @@ header {
     width: 100vw;
     height: 100%;
     display: inline-block;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.8);
 }
 
 .banner .slidearea {
@@ -123,10 +132,7 @@ header {
 }
 
 /* Área do titulo e das imagens das marcas */
-.slideTitle {
-    display: flex;
-    gap: 50px;
-}
+
 
 /* Titulo principal */
 .banner h1 {
@@ -142,20 +148,14 @@ header {
     font-weight: 200;
 }
 
-.banner .slidearea .slideImgs img {
-    height: 150px;
-
-}
-
-
 /* Área dos icones de serviço  */
 
-.banner .slidearea .slideService {
+.banner .slidearea .slideMs {
     min-width: 1140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 30px;
     top: 150px;
     position: relative;
 }
@@ -171,7 +171,7 @@ header {
 /* Icones de serviço */
 
 
-.banner .slidearea .slideService .slideIcon img {
+.banner .slidearea .slideMs .slideIcon img {
     width: 70px;
     cursor: pointer;
 }
@@ -367,6 +367,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
 }
 
@@ -376,7 +377,6 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-left: 20px;
     width: 230px;
     height: 150px;
 }
@@ -411,6 +411,16 @@ header {
 
 
 }
+.foneEndereco{
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+
+.section-contato .foneEndereco p{
+    font-size: 25px;
+}
+
+
 
 .section-contato .contato .horariosMapa .horarios .horario {
     margin-top: 20px;
@@ -568,9 +578,7 @@ header {
     
 }
 .mapa{
-    
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 320px;
