@@ -570,7 +570,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--cor-vermelha);
-    width: 80%;
+    width: 320px;
+    
 }
-
 }
