@@ -284,12 +284,12 @@ header {
 
 .servIcon {
     text-align: center;
-    width: 350px;
+    width: 250px;
     height: 250px;
 }
 
 .servIcon img {
-    width: 120px;
+    width: 100px;
     box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
     border-radius: 50%;
 }
@@ -607,7 +607,7 @@ header {
     }
 
     .section-servicos .servicos .servIcon {
-        width: 175px;
+        width: 167px;
     }
 
     .section-servicos .servContato p {
