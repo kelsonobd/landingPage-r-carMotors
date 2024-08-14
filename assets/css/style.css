@@ -279,12 +279,13 @@ header {
 .servIcons {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
 .servIcon {
     text-align: center;
-    width: 250px;
+    width: 300px;
     height: 250px;
 }
 
