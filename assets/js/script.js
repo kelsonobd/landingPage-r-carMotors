@@ -20,11 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function openModal(imageUrl) { 
+function openModal(imageUrl, imageUrl2) { 
     var modal = document.getElementById("modal");
     var modalImage = document.getElementById("modal-image");
+    var modalImage2 = document.getElementById("modal-image2");
 
     modalImage.src = imageUrl; 
+    modalImage2.src = imageUrl2;
+
     modal.classList.add("show"); 
     document.body.style.overflow = "hidden"; // Desativa a rolagem no body
 }

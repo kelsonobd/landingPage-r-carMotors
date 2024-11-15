@@ -370,23 +370,37 @@ header {
 }
 
 .modal-content {
+    display: flex;
+   width: 50%;
+    gap:10px;
+    /* Espaço entre as imagens */
     max-width: 80%;
     border-radius: 10px;
     transform: scale(0.9);
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Necessário para posicionamento interno do conteúdo */
+}
+
+.modal-image {
+    max-width: 48%;
+    /* Cada imagem ocupa metade do espaço */
+    border-radius: 10px;
 }
 
 .close-button {
-    position: absolute; /* Posiciona o botão fora do fluxo do flexbox */
-    top: 20px; /* Ajuste para a posição vertical */
-    right: 20px; /* Ajuste para a posição horizontal */
+    position: absolute;
+    /* Posiciona o botão fora do fluxo do flexbox */
+    top: 20px;
+    /* Ajuste para a posição vertical */
+    right: 20px;
+    /* Ajuste para a posição horizontal */
     color: white;
-    font-size: 50px; /* Ajuste o tamanho conforme desejado */
+    font-size: 50px;
+    /* Ajuste o tamanho conforme desejado */
     font-weight: bold;
     cursor: pointer;
-    z-index: 2; /* Garante que o botão fique acima do conteúdo */
+    z-index: 2;
+    /* Garante que o botão fique acima do conteúdo */
 }
 
 .close-button:hover,
@@ -784,43 +798,20 @@ header {
     }
 
     /* MODAL */
-
-
+    .modal {
+        flex-direction: column;
+      
+    }
+    
+    .modal.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    
     .modal-content {
-        display: block;
-        position: fixed;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 80%;
-        border-radius: 10px;
+       width: 100%; 
     }
-
-
-    .modal-content {
-        display: block;
-        margin: 10% auto;
-        max-width: 80%;
-        border-radius: 10px;
-    }
-
-    .close-button {
-        color: white;
-        float: right;
-        font-size: 30px;
-        font-weight: bold;
-        margin-right: 20px;
-        margin-top: 30%;
-        cursor: pointer;
-    }
-
-    .close-button:hover,
-    .close-button:focus {
-        color: #999;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
+    
 
 
     /* section contato */
