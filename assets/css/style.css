@@ -35,8 +35,6 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
-
-
 }
 
 /* Área do logo */
@@ -46,6 +44,7 @@ header {
     color: white;
     align-items: center;
     gap: 20px;
+    margin-left: 15px;
 
 }
 
@@ -219,7 +218,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
 .sobreText {
@@ -350,29 +349,44 @@ header {
 
 /* ÁREA MODAL */
 .modal {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
+    transition: visibility 0s, opacity 0.4s ease;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
 }
 
 .modal-content {
-    display: block;
-    margin: 10% auto;
     max-width: 80%;
     border-radius: 10px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Necessário para posicionamento interno do conteúdo */
 }
 
 .close-button {
+    position: absolute; /* Posiciona o botão fora do fluxo do flexbox */
+    top: 20px; /* Ajuste para a posição vertical */
+    right: 20px; /* Ajuste para a posição horizontal */
     color: white;
-    float: right;
-    font-size: 50px;
+    font-size: 50px; /* Ajuste o tamanho conforme desejado */
     font-weight: bold;
+    cursor: pointer;
+    z-index: 2; /* Garante que o botão fique acima do conteúdo */
 }
 
 .close-button:hover,
@@ -474,6 +488,7 @@ header {
     align-items: center;
     line-height: 25px;
 }
+
 .section-contato .foneEndereco p {
     font-size: 15px;
 }
@@ -487,7 +502,7 @@ header {
     justify-content: center;
     align-items: end;
     padding-bottom: 7px;
-    
+
 }
 
 
@@ -518,23 +533,20 @@ header {
 /* Responsividade para Tablets */
 
 @media (min-width: 450px) and (max-width: 834px) {
-   .banner .slidearea{
-   
-       
-     
-        
-    }
+    .banner .slidearea {}
 
-    .logo{
+    .logo {
         margin-left: 30px;
     }
-    .menu-opener{
+
+    .menu-opener {
         display: block;
         margin-right: 30px;
         width: 45px;
     }
+
     nav {
-        display:none;
+        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.9);
@@ -543,14 +555,15 @@ header {
         top: 100px;
         right: 0;
     }
+
     nav.open {
         display: block;
         transform: translateX(0);
         /* Move o menu para dentro da tela */
     }
 
-    .menu ul{
-     flex-direction: column;
+    .menu ul {
+        flex-direction: column;
     }
 
     .menu li a {
@@ -567,46 +580,52 @@ header {
     }
 
     /* Area sobre */
-    .section-sobre .sobreTitle h2{
+    .section-sobre .sobreTitle h2 {
         font-size: 40px;
         font-weight: 500;
     }
-    .section-sobre .sobreNos{
-      
+
+    .section-sobre .sobreNos {
+
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        
+
     }
 
-   .section-sobre .sobreNos .sobreText{
+    .section-sobre .sobreNos .sobreText {
         margin: 0;
         width: 70%;
     }
 
-    .section-sobre .sobreNos .sobreText p{
+    .section-sobre .sobreNos .sobreText p {
         font-size: 23px;
 
     }
-    .sobreImg{
+
+    .sobreImg {
         width: auto;
     }
+
     /* area servicos */
-    .section-servicos .title h2{
+    .section-servicos .title h2 {
         font-size: 40px;
     }
 
     /* area contato */
-    .section-contato .contato h2{
+    .section-contato .contato h2 {
         font-size: 40px;
     }
+
     .section-contato .horariosMapa .horarios {
         font-size: 20px;
         margin-left: 35px;
     }
-    .section-contato .horariosMapa .mapa .map{
+
+    .section-contato .horariosMapa .mapa .map {
         width: 500px;
     }
+
     .rodape p {
         font-size: 17px;
         padding-bottom: 10px;
@@ -763,6 +782,46 @@ header {
         font-size: 20px;
         text-align: center;
     }
+
+    /* MODAL */
+
+
+    .modal-content {
+        display: block;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        border-radius: 10px;
+    }
+
+
+    .modal-content {
+        display: block;
+        margin: 10% auto;
+        max-width: 80%;
+        border-radius: 10px;
+    }
+
+    .close-button {
+        color: white;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 20px;
+        margin-top: 30%;
+        cursor: pointer;
+    }
+
+    .close-button:hover,
+    .close-button:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
 
     /* section contato */
     .section-contato .contato h2 {

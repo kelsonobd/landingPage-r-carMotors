@@ -19,14 +19,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function openModal(imageUrl) {
+
+function openModal(imageUrl) { 
     var modal = document.getElementById("modal");
     var modalImage = document.getElementById("modal-image");
-    modal.style.display = "block";
-    modalImage.src = imageUrl;
+
+    modalImage.src = imageUrl; 
+    modal.classList.add("show"); 
+    document.body.style.overflow = "hidden"; // Desativa a rolagem no body
 }
 
 function closeModal() {
     var modal = document.getElementById("modal");
-    modal.style.display = "none";
+
+    modal.classList.remove("show"); 
+    document.body.style.overflow = "auto"; // Restaura a rolagem no body
 }
+
+
